@@ -1,0 +1,23 @@
+name: "slide-scaffolder"
+description: "Generates new interactive React/TypeScript slide components from outline specifications and styling themes."
+input_schema:
+  type: object
+  properties:
+    slide_id:
+      type: string
+      description: "Unique kebab-case identifier for the slide."
+    title:
+      type: string
+      description: "Slide headline or presentation topic."
+    theme:
+      type: string
+      enum: ["dark", "light", "minimal", "terminal", "corporate"]
+      description: "Visual design theme applied to the slide layout."
+    content_blocks:
+      type: array
+      items:
+        type: string
+      description: "List of markdown or JSX bullet content segments."
+  required:
+    - slide_id
+    - title

@@ -1,0 +1,21 @@
+spec_version: "0.1.0"
+name: "open-slide"
+version: "1.0.0"
+description: "AI-native presentation engineering agent and slide compilation runtime generating interactive, component-driven slide decks across TypeScript, Vite, and React."
+author: "OpenSlide Contributors <support@open-slide.dev>"
+license: "MIT"
+metadata:
+  domain: "Developer Tools / Slide Engineering, Interactive Presentations & AI Deck Generation"
+  category: "Developer Tools"
+  framework: "OpenSlide / Vite / React / TypeScript"
+  language: "TypeScript"
+skills:
+  - "slide-generation"
+  - "deck-inspection"
+  - "component-styling"
+  - "presenter-mode-control"
+tools:
+  - "slide-scaffolder"
+  - "deck-compiler"
+  - "inspector-telemetry"
+  - "presenter-controller"

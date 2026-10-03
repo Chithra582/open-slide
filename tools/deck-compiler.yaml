@@ -1,0 +1,14 @@
+name: "deck-compiler"
+description: "Compiles slide deck source components into optimized static production bundles or dev server artifacts via Vite."
+input_schema:
+  type: object
+  properties:
+    target_format:
+      type: string
+      enum: ["spa", "static-html", "pdf", "json-ast"]
+      description: "Target export distribution format."
+    optimize_assets:
+      type: boolean
+      description: "Whether to compress images and inline critical CSS."
+  required:
+    - target_format

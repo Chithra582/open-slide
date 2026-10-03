@@ -1,0 +1,15 @@
+name: "inspector-telemetry"
+description: "Collects real-time deck telemetry including slide transition timings, component render durations, and layout bounding boxes."
+input_schema:
+  type: object
+  properties:
+    session_id:
+      type: string
+      description: "Active presentation run session identifier."
+    telemetry_type:
+      type: string
+      enum: ["perf", "layout", "contrast", "timing"]
+      description: "Category of inspection metrics to extract."
+  required:
+    - session_id
+    - telemetry_type

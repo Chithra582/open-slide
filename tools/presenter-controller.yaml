@@ -1,0 +1,14 @@
+name: "presenter-controller"
+description: "Manages dual-screen presenter mode controls, private speaker notes, session countdown timers, and audience broadcast locks."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum: ["next", "prev", "jump", "toggle-notes", "pause-timer", "sync-display"]
+      description: "Control signal dispatched to presentation runtime."
+    slide_index:
+      type: integer
+      description: "Target slide index for jump actions."
+  required:
+    - action
